@@ -54,6 +54,13 @@ class MenuScreen extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, 'order');
+            },
+            child: const Text('View Order Summary'),
+          ),
         ],
       ),
     );
